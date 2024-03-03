@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  node-container:
+    image: yug03/node-server
+    ports:
+      - "8000:8080"
+
+  vite-react-app:
+    image: yug03/vite-frontend
+    ports:
+      - "3000:5173"
